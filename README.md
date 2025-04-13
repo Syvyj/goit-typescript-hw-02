@@ -1,12 +1,96 @@
-# React + Vite
+# Image Search App | Застосунок пошуку зображень
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🇺🇦 Опис українською
 
-Currently, two official plugins are available:
+Застосунок для пошуку зображень за ключовим словом з використанням API Unsplash. Проект розроблено з використанням React та сучасних web-технологій.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Функціональність:
+- Пошук зображень за ключовим словом
+- Відображення результатів у вигляді галереї
+- Завантаження додаткових зображень кнопкою "Load more"
+- Перегляд детальної інформації про зображення у модальному вікні
+- Адаптивний дизайн для різних пристроїв
 
-## Expanding the ESLint configuration
+### Технічні деталі:
+- React з використанням функціональних компонентів та хуків
+- Material Design для стилізації інтерфейсу
+- CSS модулі для ізоляції стилів
+- Axios для HTTP-запитів
+- React Modal для модальних вікон
+- React Hot Toast для сповіщень
+- Адаптивна та респонсивна верстка
+- Анімації та переходи для покращення UX
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Використані технології:
+- React
+- JavaScript (ES6+)
+- CSS Modules
+- Axios
+- React Modal
+- React Hot Toast
+- React Spinners
+- Material Design принципи
+
+## 🇬🇧 English Description
+
+An image search application using the Unsplash API. The project is built with React and modern web technologies.
+
+### Features:
+- Keyword-based image search
+- Gallery-style results display
+- "Load more" pagination
+- Detailed image information in modal window
+- Responsive design for all devices
+
+### Technical Details:
+- React with functional components and hooks
+- Material Design styling
+- CSS Modules for style isolation
+- Axios for HTTP requests
+- React Modal for modal windows
+- React Hot Toast for notifications
+- Adaptive and responsive layout
+- Animations and transitions for enhanced UX
+
+### Technologies Used:
+- React
+- JavaScript (ES6+)
+- CSS Modules
+- Axios
+- React Modal
+- React Hot Toast
+- React Spinners
+- Material Design principles
+
+## Screenshots | Скріншоти
+
+[Add screenshots of your application here]
+
+## Installation | Встановлення
+
+```bash
+# Clone the repository
+git clone [repository-url]
+
+# Install dependencies
+npm install
+
+# Run the application
+npm run dev
+```
+
+## Environment Variables | Змінні оточення
+
+Create a `.env` file in the root directory and add your Unsplash API access key:
+
+```env
+VITE_UNSPLASH_ACCESS_KEY=your_access_key_here
+```
+
+## License | Ліцензія
+
+MIT License | Ліцензія MIT
+
+## Author | Автор
+
+[Your Name] | [Ваше ім'я]
