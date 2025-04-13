@@ -1,0 +1,20 @@
+.error {
+  padding: 16px;
+  margin: 16px auto;
+  max-width: 600px;
+  text-align: center;
+  background-color: #fdecea;
+  color: var(--error);
+  border-radius: 4px;
+  box-shadow: var(--elevation-1);
+}
+
+.text {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}

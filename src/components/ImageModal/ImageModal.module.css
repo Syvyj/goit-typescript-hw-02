@@ -1,0 +1,60 @@
+.modal {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  transform: translate(-50%, -50%);
+  max-width: 90vw;
+  max-height: 90vh;
+  background-color: var(--surface);
+  border-radius: 8px;
+  padding: 24px;
+  outline: none;
+  box-shadow: var(--elevation-3);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.image {
+  max-width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.info {
+  color: var(--text-primary);
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 16px;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-radius: 4px;
+}
+
+.info p {
+  margin: 8px 0;
+  color: var(--text-secondary);
+}
+
+.info p:first-child {
+  color: var(--text-primary);
+  font-weight: 500;
+}

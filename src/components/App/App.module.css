@@ -1,0 +1,17 @@
+.app {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 24px;
+  padding: 24px;
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: var(--background);
+}
+
+@media screen and (max-width: 480px) {
+  .app {
+    padding: 12px;
+    grid-gap: 16px;
+  }
+}
