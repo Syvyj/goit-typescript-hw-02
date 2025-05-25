@@ -1,7 +1,13 @@
 import ImageCard from '../ImageCard/ImageCard';
 import css from './ImageGallery.module.css';
+import type { UnsplashImage } from '../../types/unsplash';
 
-const ImageGallery = ({ images, onImageClick }) => {
+interface ImageGalleryProps {
+  images: UnsplashImage[];
+  onImageClick: (image: UnsplashImage) => void;
+}
+
+const ImageGallery: React.FC<ImageGalleryProps> = ({ images, onImageClick }) => {
   if (!images.length) {
     return null;
   }

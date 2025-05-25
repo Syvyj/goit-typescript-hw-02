@@ -1,12 +1,20 @@
-import { useState } from 'react';
+import { useState, FormEvent, ChangeEvent } from 'react';
 import css from './SearchBar.module.css';
 
-const SearchBar = ({ onSubmit }) => {
-  const [query, setQuery] = useState('');
+interface SearchBarProps {
+  onSubmit: (query: string) => void;
+}
 
-  const handleSubmit = e => {
+const SearchBar: React.FC<SearchBarProps> = ({ onSubmit }) => {
+  const [query, setQuery] = useState<string>('');
+
+  const handleSubmit = (e: FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
     onSubmit(query);
+  };
+
+  const handleChange = (e: ChangeEvent<HTMLInputElement>): void => {
+    setQuery(e.target.value);
   };
 
   return (
@@ -16,9 +24,9 @@ const SearchBar = ({ onSubmit }) => {
           className={css.input}
           type="text"
           value={query}
-          onChange={e => setQuery(e.target.value)}
-          autocomplete="off"
-          autofocus
+          onChange={handleChange}
+          autoComplete="off"
+          autoFocus
           placeholder="Search images and photos"
         />
         <button className={css.button} type="submit">
