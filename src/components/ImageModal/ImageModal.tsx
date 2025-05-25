@@ -17,20 +17,27 @@ const ImageModal: React.FC<ImageModalProps> = ({ image, onClose, isOpen }) => {
       onRequestClose={onClose}
       className={css.modal}
       overlayClassName={css.overlay}
+      shouldCloseOnOverlayClick={true}
+      shouldCloseOnEsc={true}
     >
       {image && (
-        <div className={css.content}>
-          <img
-            src={image.urls.regular}
-            alt={image.alt_description || 'Image'}
-            className={css.image}
-          />
-          <div className={css.info}>
-            <p>Author: {image.user.name}</p>
-            <p>Likes: {image.likes}</p>
-            <p>Description: {image.description || 'No description available'}</p>
+        <>
+          <button className={css.closeButton} onClick={onClose} type="button">
+            ×
+          </button>
+          <div className={css.content}>
+            <img
+              src={image.urls.regular}
+              alt={image.alt_description || 'Image'}
+              className={css.image}
+            />
+            <div className={css.info}>
+              <p>Author: {image.user.name}</p>
+              <p>Likes: {image.likes}</p>
+              <p>Description: {image.description || 'No description available'}</p>
+            </div>
           </div>
-        </div>
+        </>
       )}
     </Modal>
   );
