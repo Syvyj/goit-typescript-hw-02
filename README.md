@@ -3,72 +3,80 @@
 ## 🇺🇦 Опис українською
 
 Застосунок для пошуку зображень за ключовим словом з використанням API Unsplash.
-Проект розроблено з використанням React та TypeScript із повною типізацією.
+Проект розроблено з використанням React та TypeScript із повною типізацією, що
+забезпечує надійність коду та відмінний досвід розробки.
 
 ### Функціональність:
 
-- Пошук зображень за ключовим словом
-- Відображення результатів у вигляді галереї
-- Завантаження додаткових зображень кнопкою "Load more"
-- Перегляд детальної інформації про зображення у модальному вікні
-- Адаптивний дизайн для різних пристроїв
+- 🔍 Пошук зображень за ключовим словом через API Unsplash
+- 🖼️ Відображення результатів у вигляді адаптивної галереї
+- ⬇️ Завантаження додаткових зображень за допомогою кнопки "Load more"
+- 🔍 Перегляд зображень у повному розмірі в модальному вікні
+- 📱 Адаптивний дизайн для всіх типів пристроїв
+- ⚡ Оптимізована продуктивність та швидка навігація
+- 💫 Плавні анімації та сучасний користувацький інтерфейс
 
-### Технічні деталі:
+### Технічні особливості:
 
-- React з використанням функціональних компонентів та хуків
-- Material Design для стилізації інтерфейсу
-- CSS модулі для ізоляції стилів
-- Axios для HTTP-запитів
-- React Modal для модальних вікон
-- React Hot Toast для сповіщень
-- Адаптивна та респонсивна верстка
-- Анімації та переходи для покращення UX
+- **TypeScript** - повна типізація для надійності коду
+- **React Hooks** - сучасний підхід до управління станом
+- **CSS Modules** - модульна система стилів з ізоляцією
+- **Custom Hooks** - переділне використання логіки (useImages, useModal)
+- **Axios** - HTTP клієнт для роботи з API
+- **React Modal** - доступні модальні вікна
+- **React Hot Toast** - елегантні сповіщення
+- **Vite** - швидка збірка та розробка
 
 ### Використані технології:
 
-- React
-- JavaScript (ES6+)
+- React 18
+- TypeScript
 - CSS Modules
 - Axios
 - React Modal
 - React Hot Toast
 - React Spinners
-- Material Design принципи
+- Vite
+- ESLint
 
 ## 🇬🇧 English Description
 
-An image search application using the Unsplash API. The project is built with
-React and modern web technologies.
+A modern image search application built with React and TypeScript, utilizing the
+Unsplash API. The project showcases best practices in TypeScript development
+with full type safety and excellent developer experience.
 
 ### Features:
 
-- Keyword-based image search
-- Gallery-style results display
-- "Load more" pagination
-- Detailed image information in modal window
-- Responsive design for all devices
+- 🔍 Keyword-based image search via Unsplash API
+- 🖼️ Responsive gallery display of search results
+- ⬇️ Infinite loading with "Load more" functionality
+- 🔍 Full-size image preview in modal windows
+- 📱 Responsive design for all device types
+- ⚡ Optimized performance and smooth navigation
+- 💫 Smooth animations and modern UI/UX
 
-### Technical Details:
+### Technical Highlights:
 
-- React with functional components and hooks
-- Material Design styling
-- CSS Modules for style isolation
-- Axios for HTTP requests
-- React Modal for modal windows
-- React Hot Toast for notifications
-- Adaptive and responsive layout
-- Animations and transitions for enhanced UX
+- **TypeScript** - Full type safety and enhanced development experience
+- **React Hooks** - Modern state management approach
+- **CSS Modules** - Modular styling with style isolation
+- **Custom Hooks** - Reusable logic (useImages, useModal)
+- **Axios** - HTTP client for API communication
+- **React Modal** - Accessible modal windows
+- **React Hot Toast** - Elegant notification system
+- **Vite** - Fast build tool and development server
 
 ### Technologies Used:
 
-- React
-- JavaScript (ES6+)
+- React 18
+- TypeScript
 - CSS Modules
 - Axios
 - React Modal
 - React Hot Toast
 - React Spinners
-- Material Design principles
+- Vite
+- ESLint
 
 ## Installation | Встановлення
 
